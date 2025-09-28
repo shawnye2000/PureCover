@@ -27,7 +27,8 @@ CUDA_VISIBLE_DEVICES=2 python -m flashrag.retriever.index_builder \
 
 ## Get Training dataset
 ```
-python run_reranker.py --dataset hotpotqa --split train --teacher qwen2.5-32b --output_training_dataset_path xxx --api_model xxx --api_key xxx --api_base xxx ## the api here is for calling the reasoning of teacher model. 
+python run_reranker.py --dataset hotpotqa --split train --teacher qwen2.5-32b --output_training_dataset_path xxx --api_model xxx --api_key xxx --api_base xxx
+## the api here is for calling the reasoning of the teacher model. 
 
 ```
 
@@ -39,7 +40,7 @@ python distillation.py --output_training_dataset_path xxx --student_path your_st
 
 ## Inference
 ```
-python run_reranker.py --dataset hotpotqa --split dev --student_path your_student_model_path --api_model xxx --api_key xxx --api_base xxx
+python run_reranker.py --dataset hotpotqa --split dev --student_path your_student_model_path --topk 5 --api_model xxx --api_key xxx --api_base xxx
 ```
 
 

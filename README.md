@@ -17,7 +17,7 @@ Download your dataset data from [Huggingface](https://huggingface.co/datasets/RU
 ```
 CUDA_VISIBLE_DEVICES=2 python -m flashrag.retriever.index_builder \
     --retrieval_method e5 \
-    --model_path xxx/.cache/huggingface/hub/models--intfloat--e5-base-v2/snapshots/1c644c92ad3ba1efdad3f1451a637716616a20e8/ \
+    --model_path your_e5_model_path \
     --corpus_path indexes/retrieval-corpus/wiki-18.jsonl \
     --save_dir indexes/ \
     --use_fp16 \

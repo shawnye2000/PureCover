@@ -3,10 +3,7 @@ This is the repository for the Paper "PureCover: Bridging the Gap in Re-ranking 
 
 ## Environment
 ```
-pip install vllm==0.6.0
-pip install flashrag-dev[full]
-# install faiss
-conda install -c pytorch -c nvidia faiss-gpu=1.8.0
+pip install -r requirements.txt
 ```
 
 ## Create Index

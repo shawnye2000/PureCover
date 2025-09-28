@@ -5,6 +5,11 @@ This is the repository for the Paper "PureCover: Bridging the Gap in Re-ranking 
 ```
 pip install -r requirements.txt
 ```
+Download your corpus data from [Huggingface](https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets/tree/main/retrieval-corpus).
+Download your dataset data from [Huggingface](https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets/tree/main) and save it in dataset/
+
+
+
 
 ## Create Index
 ```
